@@ -1,28 +1,50 @@
 {
-    "name": "landing-pages",
-    "version": "1.0.0",
-    "description": "beautiful landing pages",
-    "main": "index.js",
-    "scripts": {
-      "start:tailwind": "cross-env NODE_ENV=development tailwindcss --postcss -i tailwind.css -o tailwind-runtime.css -w",
-      "build:tailwind": "cross-env NODE_ENV=production tailwindcss --postcss -i tailwind.css -o tailwind-build.css --minify",
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-      "landing",
-      "pages",
-      "motion",
-      "design",
-      "websites"
+  "name": "wheretf-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.126",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "framer-motion": "^12.4.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-intersection-observer": "^9.15.1",
+    "react-router-dom": "^7.1.5",
+    "react-scripts": "5.0.1",
+    "styled-components": "^6.1.15",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ],
-    "author": "Paul",
-    "license": "MIT",
-    "devDependencies": {
-      "tailwindcss": "^3.4.1"
-    },
-    "dependencies": {
-      "postcss": "^8.4.33",
-      "postcss-simple-vars": "^7.0.1"
-    }
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
-  
+}

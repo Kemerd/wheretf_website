@@ -31,6 +31,7 @@ const Logo = styled(motion.a)`
   img {
     height: 40px;
     width: auto;
+    filter: brightness(0) invert(1);
   }
 `;
 
@@ -83,69 +84,69 @@ const MobileMenu = styled(motion.div)`
 `;
 
 const Header: React.FC = () => {
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    return (
-        <HeaderContainer
-            initial={{ y: -100 }}
-            animate={{ y: 0 }}
-            transition={{
-                type: 'spring',
-                stiffness: 300,
-                damping: 30,
-            }}
-        >
-            <Logo href="/" variants={bounceScale} whileHover="hover" whileTap="tap">
-                <img src="/assets/logo/logo.png" alt="WhereTF.ai Logo" />
-            </Logo>
+  return (
+    <HeaderContainer
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{
+        type: 'spring',
+        stiffness: 300,
+        damping: 30,
+      }}
+    >
+      <Logo href="/" variants={bounceScale} whileHover="hover" whileTap="tap">
+        <img src="/assets/logo/wheretf_logo_light.svg" alt="WhereTF.ai Logo" />
+      </Logo>
 
-            <Nav>
-                {['Features', 'Pricing', 'Support'].map((item) => (
-                    <NavLink
-                        key={item}
-                        href={`#${item.toLowerCase()}`}
-                        variants={bounceScale}
-                        whileHover="hover"
-                        whileTap="tap"
-                    >
-                        {item}
-                    </NavLink>
-                ))}
-            </Nav>
+      <Nav>
+        {['Features', 'Pricing', 'Support'].map((item) => (
+          <NavLink
+            key={item}
+            href={`#${item.toLowerCase()}`}
+            variants={bounceScale}
+            whileHover="hover"
+            whileTap="tap"
+          >
+            {item}
+          </NavLink>
+        ))}
+      </Nav>
 
-            <MobileMenuButton
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+      <MobileMenuButton
+        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        variants={bounceScale}
+        whileTap="tap"
+      >
+        {isMobileMenuOpen ? '×' : '☰'}
+      </MobileMenuButton>
+
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <MobileMenu
+            variants={slideInRight}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+          >
+            {['Features', 'Pricing', 'Support'].map((item) => (
+              <NavLink
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                onClick={() => setIsMobileMenuOpen(false)}
                 variants={bounceScale}
+                whileHover="hover"
                 whileTap="tap"
-            >
-                {isMobileMenuOpen ? '×' : '☰'}
-            </MobileMenuButton>
-
-            <AnimatePresence>
-                {isMobileMenuOpen && (
-                    <MobileMenu
-                        variants={slideInRight}
-                        initial="hidden"
-                        animate="visible"
-                        exit="hidden"
-                    >
-                        {['Features', 'Pricing', 'Support'].map((item) => (
-                            <NavLink
-                                key={item}
-                                href={`#${item.toLowerCase()}`}
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                variants={bounceScale}
-                                whileHover="hover"
-                                whileTap="tap"
-                            >
-                                {item}
-                            </NavLink>
-                        ))}
-                    </MobileMenu>
-                )}
-            </AnimatePresence>
-        </HeaderContainer>
-    );
+              >
+                {item}
+              </NavLink>
+            ))}
+          </MobileMenu>
+        )}
+      </AnimatePresence>
+    </HeaderContainer>
+  );
 };
 
 export default Header; 
