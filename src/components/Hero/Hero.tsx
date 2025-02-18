@@ -173,7 +173,7 @@ const Hero: React.FC = () => {
           variants={fadeUpVariant}
         >
           <PhoneImage
-            src="/assets/images/home/phone.png"
+            src="/assets/images/IPhone_16_Pro_Max_Vector.svg"
             alt="WhereTF.ai App Interface"
             initial={{ y: 20 }}
             animate={{
@@ -184,6 +184,11 @@ const Hero: React.FC = () => {
               repeat: Infinity,
               repeatType: "reverse",
               ease: "easeInOut",
+            }}
+            style={{
+              maxWidth: '380px',
+              margin: '0 auto',
+              filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.2))'
             }}
           />
         </PhoneContainer>
