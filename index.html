@@ -622,99 +622,114 @@
                 Upgrade</h2>
 
             <!-- Pricing cards container with improved centering and spacing -->
-            <div class="tw-pricing-container tw-flex tw-justify-center tw-items-center tw-gap-16 max-lg:tw-flex-col">
+            <div class="tw-pricing-container tw-flex tw-justify-center tw-items-start tw-gap-16 max-lg:tw-flex-col">
                 <!-- Pro Plan Card -->
                 <div
-                    class="tw-pricing-card reveal-up tw-flex tw-flex-col tw-w-full max-w-[450px] tw-bg-[#121212] tw-rounded-2xl tw-p-[1px] tw-bg-gradient-to-r tw-from-[#0A8DD3] tw-via-[#0A8DD3] tw-to-[#0A8DD3]">
+                    class="tw-pricing-card reveal-up tw-relative tw-flex tw-flex-col tw-w-full max-w-[450px] tw-bg-[#121212] tw-rounded-2xl tw-p-[1px] tw-bg-gradient-to-r tw-from-[#0A8DD3] tw-via-[#0A8DD3] tw-to-[#0A8DD3]">
+                    <!-- Popular Ribbon -->
+                    <div class="tw-absolute tw-right-0 tw-top-0 tw--mr-2">
+                        <div
+                            class="tw-bg-[#0A8DD3] tw-text-white tw-px-6 tw-py-1.5 tw-text-sm tw-font-medium tw-rounded-l-full tw-shadow-lg">
+                            Popular Choice
+                        </div>
+                    </div>
                     <div
                         class="tw-bg-[#121212] tw-rounded-2xl tw-p-12 tw-h-full tw-flex tw-flex-col hover:tw-scale-105 tw-transition-all tw-duration-500">
-                        <div class="tw-flex tw-justify-between tw-items-center tw-mb-8">
-                            <h3 class="tw-text-3xl tw-font-bold">Pro Plan</h3>
-                            <span
-                                class="tw-bg-[#0A8DD3]/20 tw-px-6 tw-py-2 tw-rounded-full tw-text-base tw-text-[#0A8DD3]">Popular</span>
+                        <div class="tw-flex tw-flex-col tw-mb-16">
+                            <div class="tw-pt-8">
+                                <h3 class="tw-text-3xl tw-font-bold tw-mb-2">Pro Plan</h3>
+                                <div class="tw-mt-8">
+                                    <span class="tw-text-5xl tw-font-bold">$9.99</span>
+                                    <span class="tw-text-gray-400 tw-text-xl">/month</span>
+                                    <p class="tw-text-gray-400 tw-mt-2">or $99.99/year</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tw-mb-10">
-                            <span class="tw-text-5xl tw-font-bold">$9.99</span>
-                            <span class="tw-text-gray-400 tw-text-xl">/month</span>
-                            <p class="tw-text-gray-400 tw-mt-2">or $99.99/year</p>
-                        </div>
-                        <ul class="tw-space-y-6 tw-mb-12 tw-flex-grow">
-                            <li class="tw-flex tw-gap-4 tw-items-center">
-                                <i class="fa-solid fa-check tw-text-xl tw-text-[#0A8DD3]"></i>
-                                <span class="tw-text-lg">Unlimited AI Text Searches</span>
+                        <ul class="tw-space-y-10 tw-mb-16 tw-flex-grow">
+                            <li class="tw-flex tw-gap-4 tw-items-start">
+                                <i class="fa-solid fa-check tw-text-xl tw-text-[#0A8DD3] tw-mt-1"></i>
+                                <span class="tw-text-lg tw-leading-relaxed">Unlimited AI Text Searches</span>
                             </li>
-                            <li class="tw-flex tw-gap-4 tw-items-center">
-                                <i class="fa-solid fa-check tw-text-xl tw-text-[#0A8DD3]"></i>
-                                <span class="tw-text-lg">10 Image-Based Lookups Per Month</span>
+                            <li class="tw-flex tw-gap-4 tw-items-start">
+                                <i class="fa-solid fa-check tw-text-xl tw-text-[#0A8DD3] tw-mt-1"></i>
+                                <span class="tw-text-lg tw-leading-relaxed">10 Image-Based Lookups Per Month</span>
                             </li>
-                            <li class="tw-flex tw-gap-4 tw-items-center">
-                                <i class="fa-solid fa-check tw-text-xl tw-text-[#0A8DD3]"></i>
-                                <span class="tw-text-lg">Smart Location Predictions</span>
+                            <li class="tw-flex tw-gap-4 tw-items-start">
+                                <i class="fa-solid fa-check tw-text-xl tw-text-[#0A8DD3] tw-mt-1"></i>
+                                <span class="tw-text-lg tw-leading-relaxed">Smart Location Predictions</span>
                             </li>
-                            <li class="tw-flex tw-gap-4 tw-items-center">
-                                <i class="fa-solid fa-check tw-text-xl tw-text-[#0A8DD3]"></i>
-                                <span class="tw-text-lg">Storage History Tracking</span>
+                            <li class="tw-flex tw-gap-4 tw-items-start">
+                                <i class="fa-solid fa-check tw-text-xl tw-text-[#0A8DD3] tw-mt-1"></i>
+                                <span class="tw-text-lg tw-leading-relaxed">Storage History Tracking</span>
                             </li>
-                            <li class="tw-flex tw-gap-4 tw-items-center">
-                                <i class="fa-solid fa-check tw-text-xl tw-text-[#0A8DD3]"></i>
-                                <span class="tw-text-lg">Priority AI Processing</span>
+                            <li class="tw-flex tw-gap-4 tw-items-start">
+                                <i class="fa-solid fa-check tw-text-xl tw-text-[#0A8DD3] tw-mt-1"></i>
+                                <span class="tw-text-lg tw-leading-relaxed">Priority AI Processing</span>
                             </li>
                         </ul>
                         <button
-                            class="btn tw-w-full tw-py-4 tw-text-lg tw-bg-[#0A8DD3] hover:tw-bg-[#0978b5] tw-mt-auto">Get
+                            class="btn tw-w-full tw-py-5 tw-text-lg tw-font-medium tw-bg-[#0A8DD3] hover:tw-bg-[#0978b5] tw-mt-auto tw-rounded-xl">Get
                             Started</button>
                     </div>
                 </div>
 
                 <!-- Premium Plan Card -->
                 <div
-                    class="tw-pricing-card reveal-up tw-flex tw-flex-col tw-w-full max-w-[450px] tw-rounded-2xl tw-p-[1px] tw-bg-gradient-to-r tw-from-purple-600 tw-via-pink-500 tw-to-purple-600">
+                    class="tw-pricing-card reveal-up tw-relative tw-flex tw-flex-col tw-w-full max-w-[450px] tw-rounded-2xl tw-p-[1px] tw-bg-gradient-to-r tw-from-purple-600 tw-via-pink-500 tw-to-purple-600">
+                    <!-- Ultimate Ribbon -->
+                    <div class="tw-absolute tw-right-0 tw-top-0 tw--mr-2">
+                        <div
+                            class="tw-bg-gradient-to-r tw-from-purple-600 tw-to-pink-600 tw-text-white tw-px-6 tw-py-1.5 tw-text-sm tw-font-medium tw-rounded-l-full tw-shadow-lg">
+                            Ultimate
+                        </div>
+                    </div>
                     <div
                         class="tw-bg-[#121212] tw-rounded-2xl tw-p-12 tw-h-full tw-flex tw-flex-col hover:tw-scale-105 tw-transition-all tw-duration-500">
-                        <div class="tw-flex tw-justify-between tw-items-center tw-mb-8">
-                            <h3 class="tw-text-3xl tw-font-bold">Premium AI Plan</h3>
-                            <span
-                                class="tw-bg-gradient-to-r tw-from-purple-600/20 tw-to-pink-600/20 tw-px-6 tw-py-2 tw-rounded-full tw-text-base tw-text-transparent tw-bg-clip-text tw-bg-gradient-to-r tw-from-purple-400 tw-to-pink-400">Ultimate</span>
+                        <div class="tw-flex tw-flex-col tw-mb-16">
+                            <div class="tw-pt-8">
+                                <h3 class="tw-text-3xl tw-font-bold tw-mb-2">Premium AI Plan</h3>
+                                <div class="tw-mt-8">
+                                    <span class="tw-text-5xl tw-font-bold">$24.99</span>
+                                    <span class="tw-text-gray-400 tw-text-xl">/month</span>
+                                    <p class="tw-text-gray-400 tw-mt-2">or $249.99/year</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tw-mb-10">
-                            <span class="tw-text-5xl tw-font-bold">$24.99</span>
-                            <span class="tw-text-gray-400 tw-text-xl">/month</span>
-                            <p class="tw-text-gray-400 tw-mt-2">or $249.99/year</p>
-                        </div>
-                        <ul class="tw-space-y-6 tw-mb-12 tw-flex-grow">
-                            <li class="tw-flex tw-gap-4 tw-items-center">
+                        <ul class="tw-space-y-10 tw-mb-16 tw-flex-grow">
+                            <li class="tw-flex tw-gap-4 tw-items-start">
                                 <i
-                                    class="fa-solid fa-check tw-text-xl tw-bg-gradient-to-r tw-from-purple-400 tw-to-pink-400 tw-bg-clip-text tw-text-transparent"></i>
-                                <span class="tw-text-lg">Everything in Pro, PLUS:</span>
+                                    class="fa-solid fa-check tw-text-xl tw-bg-gradient-to-r tw-from-purple-400 tw-to-pink-400 tw-bg-clip-text tw-text-transparent tw-mt-1"></i>
+                                <span class="tw-text-lg tw-leading-relaxed">Everything in Pro, PLUS:</span>
                             </li>
-                            <li class="tw-flex tw-gap-4 tw-items-center">
+                            <li class="tw-flex tw-gap-4 tw-items-start">
                                 <i
-                                    class="fa-solid fa-check tw-text-xl tw-bg-gradient-to-r tw-from-purple-400 tw-to-pink-400 tw-bg-clip-text tw-text-transparent"></i>
-                                <span class="tw-text-lg">50 AI Image-Based Lookups Per Month</span>
+                                    class="fa-solid fa-check tw-text-xl tw-bg-gradient-to-r tw-from-purple-400 tw-to-pink-400 tw-bg-clip-text tw-text-transparent tw-mt-1"></i>
+                                <span class="tw-text-lg tw-leading-relaxed">50 AI Image-Based Lookups Per Month</span>
                             </li>
-                            <li class="tw-flex tw-gap-4 tw-items-center">
+                            <li class="tw-flex tw-gap-4 tw-items-start">
                                 <i
-                                    class="fa-solid fa-check tw-text-xl tw-bg-gradient-to-r tw-from-purple-400 tw-to-pink-400 tw-bg-clip-text tw-text-transparent"></i>
-                                <span class="tw-text-lg">AI Behavioral Insights</span>
+                                    class="fa-solid fa-check tw-text-xl tw-bg-gradient-to-r tw-from-purple-400 tw-to-pink-400 tw-bg-clip-text tw-text-transparent tw-mt-1"></i>
+                                <span class="tw-text-lg tw-leading-relaxed">AI Behavioral Insights</span>
                             </li>
-                            <li class="tw-flex tw-gap-4 tw-items-center">
+                            <li class="tw-flex tw-gap-4 tw-items-start">
                                 <i
-                                    class="fa-solid fa-check tw-text-xl tw-bg-gradient-to-r tw-from-purple-400 tw-to-pink-400 tw-bg-clip-text tw-text-transparent"></i>
-                                <span class="tw-text-lg">Real-Time Image Matching</span>
+                                    class="fa-solid fa-check tw-text-xl tw-bg-gradient-to-r tw-from-purple-400 tw-to-pink-400 tw-bg-clip-text tw-text-transparent tw-mt-1"></i>
+                                <span class="tw-text-lg tw-leading-relaxed">Real-Time Image Matching</span>
                             </li>
-                            <li class="tw-flex tw-gap-4 tw-items-center">
+                            <li class="tw-flex tw-gap-4 tw-items-start">
                                 <i
-                                    class="fa-solid fa-check tw-text-xl tw-bg-gradient-to-r tw-from-purple-400 tw-to-pink-400 tw-bg-clip-text tw-text-transparent"></i>
-                                <span class="tw-text-lg">Advanced Search Accuracy</span>
+                                    class="fa-solid fa-check tw-text-xl tw-bg-gradient-to-r tw-from-purple-400 tw-to-pink-400 tw-bg-clip-text tw-text-transparent tw-mt-1"></i>
+                                <span class="tw-text-lg tw-leading-relaxed">Advanced Search Accuracy</span>
                             </li>
-                            <li class="tw-flex tw-gap-4 tw-items-center">
+                            <li class="tw-flex tw-gap-4 tw-items-start">
                                 <i
-                                    class="fa-solid fa-check tw-text-xl tw-bg-gradient-to-r tw-from-purple-400 tw-to-pink-400 tw-bg-clip-text tw-text-transparent"></i>
-                                <span class="tw-text-lg">Exclusive Beta Features & Priority Support</span>
+                                    class="fa-solid fa-check tw-text-xl tw-bg-gradient-to-r tw-from-purple-400 tw-to-pink-400 tw-bg-clip-text tw-text-transparent tw-mt-1"></i>
+                                <span class="tw-text-lg tw-leading-relaxed">Exclusive Beta Features & Priority
+                                    Support</span>
                             </li>
                         </ul>
                         <button
-                            class="btn tw-block tw-text-center tw-py-4 tw-text-lg tw-bg-gradient-to-r tw-from-purple-600 tw-to-pink-600 hover:tw-from-purple-700 hover:tw-to-pink-700 tw-transition-all hover:tw-scale-105 tw-mt-auto">Get
+                            class="btn tw-block tw-text-center tw-py-5 tw-text-lg tw-font-medium tw-bg-gradient-to-r tw-from-purple-600 tw-to-pink-600 hover:tw-from-purple-700 hover:tw-to-pink-700 tw-transition-all hover:tw-scale-105 tw-mt-auto tw-rounded-xl">Get
                             Premium</button>
                     </div>
                 </div>
