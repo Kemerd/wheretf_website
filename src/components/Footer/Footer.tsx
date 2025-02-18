@@ -1,8 +1,10 @@
-import React from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { fadeUpVariant, bounceScale } from '../../animations/variants';
 import useInView from '../../hooks/useInView';
+import Modal from '../Modal/Modal';
+import { PrivacyPolicyContent, TermsOfServiceContent, AboutUsContent } from '../Modal/ModalContent';
 
 const FooterSection = styled(motion.footer)`
   padding: ${({ theme }) => theme.spacing['3xl']} ${({ theme }) => theme.spacing.xl};
@@ -58,9 +60,10 @@ const LinkList = styled(motion.ul)`
   gap: ${({ theme }) => theme.spacing.sm};
 `;
 
-const Link = styled(motion.a)`
+const Link = styled(motion.button)`
   color: ${({ theme }) => theme.colors.text.secondary};
   font-size: ${({ theme }) => theme.typography.fontSize.base};
+  text-align: left;
   transition: color 0.2s ease;
 
   &:hover {
@@ -107,13 +110,20 @@ const Copyright = styled(motion.p)`
   font-size: ${({ theme }) => theme.typography.fontSize.sm};
 `;
 
-const LegalLinks = styled(motion.div)`
-  display: flex;
-  gap: ${({ theme }) => theme.spacing.lg};
+const ComingSoonContent = styled.div`
+  text-align: center;
+  padding: ${({ theme }) => theme.spacing.xl};
+  color: ${({ theme }) => theme.colors.text.secondary};
+  font-size: ${({ theme }) => theme.typography.fontSize.lg};
 `;
+
+type ModalType = 'privacy' | 'terms' | 'about' | 'pressKit' | null;
 
 const Footer: React.FC = () => {
   const { ref, controls } = useInView();
+  const [activeModal, setActiveModal] = useState<ModalType>(null);
+
+  const handleCloseModal = () => setActiveModal(null);
 
   return (
     <FooterSection ref={ref}>
@@ -166,46 +176,71 @@ const Footer: React.FC = () => {
         <Column>
           <Title>Product</Title>
           <LinkList>
-            <li><Link href="#features">Features</Link></li>
-            <li><Link href="#pricing">Pricing</Link></li>
-            <li><Link href="#support">Support</Link></li>
-            <li><Link href="#">Download App</Link></li>
+            <li><Link as="a" href="#features">Features</Link></li>
+            <li><Link as="a" href="#pricing">Pricing</Link></li>
+            <li><Link as="a" href="#support">Support</Link></li>
+            <li><Link as="a" href="#">Download App</Link></li>
           </LinkList>
         </Column>
 
         <Column>
           <Title>Company</Title>
           <LinkList>
-            <li><Link href="#">About Us</Link></li>
-            <li><Link href="#">Careers</Link></li>
-            <li><Link href="#">Blog</Link></li>
-            <li><Link href="#">Press Kit</Link></li>
+            <li><Link onClick={() => setActiveModal('about')}>About Us</Link></li>
+            <li><Link onClick={() => setActiveModal('pressKit')}>Press Kit</Link></li>
           </LinkList>
         </Column>
 
         <Column>
           <Title>Legal</Title>
           <LinkList>
-            <li><Link href="#">Terms of Service</Link></li>
-            <li><Link href="#">Privacy Policy</Link></li>
-            <li><Link href="#">Cookie Policy</Link></li>
-            <li><Link href="#">GDPR</Link></li>
+            <li><Link onClick={() => setActiveModal('terms')}>Terms of Service</Link></li>
+            <li><Link onClick={() => setActiveModal('privacy')}>Privacy Policy</Link></li>
           </LinkList>
         </Column>
       </Container>
 
-      <Container>
-        <BottomBar>
-          <Copyright>
-            © {new Date().getFullYear()} WhereTF.ai. All rights reserved.
-          </Copyright>
-          <LegalLinks>
-            <Link href="#">Terms</Link>
-            <Link href="#">Privacy</Link>
-            <Link href="#">Cookies</Link>
-          </LegalLinks>
-        </BottomBar>
-      </Container>
+      <BottomBar>
+        <Copyright>
+          © {new Date().getFullYear()} WhereTF.ai. All rights reserved.
+        </Copyright>
+      </BottomBar>
+
+      {/* Modals */}
+      <Modal
+        isOpen={activeModal === 'privacy'}
+        onClose={handleCloseModal}
+        title="Privacy Policy"
+      >
+        <PrivacyPolicyContent />
+      </Modal>
+
+      <Modal
+        isOpen={activeModal === 'terms'}
+        onClose={handleCloseModal}
+        title="Terms of Service"
+      >
+        <TermsOfServiceContent />
+      </Modal>
+
+      <Modal
+        isOpen={activeModal === 'about'}
+        onClose={handleCloseModal}
+        title="About Us"
+      >
+        <AboutUsContent />
+      </Modal>
+
+      <Modal
+        isOpen={activeModal === 'pressKit'}
+        onClose={handleCloseModal}
+        title="Press Kit"
+      >
+        <ComingSoonContent>
+          <p>Our press kit is coming soon!</p>
+          <p>Check back later for media resources and brand assets.</p>
+        </ComingSoonContent>
+      </Modal>
     </FooterSection>
   );
 };
