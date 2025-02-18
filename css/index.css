@@ -118,6 +118,8 @@ header>.collapsible-header {
     color: #fff;
     background-color: #007aff;
     transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
 }
 
 .btn:hover {
@@ -286,10 +288,10 @@ header>.collapsible-header {
 /* Pricing cards container with improved centering */
 .tw-pricing-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: stretch;
     gap: 16px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
@@ -297,12 +299,15 @@ header>.collapsible-header {
 
 /* Updated pricing card style for a sleek, modern look */
 .tw-pricing-card {
+    flex: 1;
+    max-width: 420px;
     border: none;
     border-radius: 16px;
     padding: 24px;
     background-color: #1c1c1e;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
 }
 
 /* Hover effect for interactive feedback */
