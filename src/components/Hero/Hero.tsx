@@ -11,6 +11,7 @@ const HeroSection = styled(motion.section)`
   align-items: center;
   justify-content: center;
   padding: ${({ theme }) => theme.spacing['3xl']} ${({ theme }) => theme.spacing.xl};
+  padding-top: calc(${({ theme }) => theme.spacing['3xl']} * 2);
   position: relative;
   overflow: hidden;
 `;
@@ -111,84 +112,84 @@ const PhoneImage = styled(motion.img)`
 `;
 
 const Hero: React.FC = () => {
-    return (
-        <HeroSection
-            variants={staggerContainer}
-            initial="hidden"
-            animate="visible"
+  return (
+    <HeroSection
+      variants={staggerContainer}
+      initial="hidden"
+      animate="visible"
+    >
+      <GradientBackground
+        animate={{
+          scale: [1, 1.2, 1],
+          rotate: [0, 180, 360],
+        }}
+        transition={{
+          duration: 20,
+          repeat: Infinity,
+          repeatType: "reverse",
+        }}
+      />
+
+      <HeroContent>
+        <Title
+          variants={fadeUpVariant}
         >
-            <GradientBackground
-                animate={{
-                    scale: [1, 1.2, 1],
-                    rotate: [0, 180, 360],
-                }}
-                transition={{
-                    duration: 20,
-                    repeat: Infinity,
-                    repeatType: "reverse",
-                }}
+          Never Lose Your Stuff
+          <br />
+          Ever Again
+        </Title>
+
+        <Subtitle variants={fadeUpVariant}>
+          For those "Where TF?!" moments. Find anything instantly with AI-powered voice,
+          text, and image search.
+        </Subtitle>
+
+        <CTAContainer variants={fadeUpVariant}>
+          <AppStoreButton
+            href="#"
+            variants={bounceScale}
+            whileHover="hover"
+            whileTap="tap"
+          >
+            <img
+              src="/assets/images/brand-logos/ios_app_store.svg"
+              alt="Download on App Store"
             />
+          </AppStoreButton>
+          <AppStoreButton
+            href="#"
+            variants={bounceScale}
+            whileHover="hover"
+            whileTap="tap"
+          >
+            <img
+              src="/assets/images/brand-logos/android_app_store.svg"
+              alt="Get it on Google Play"
+            />
+          </AppStoreButton>
+        </CTAContainer>
 
-            <HeroContent>
-                <Title
-                    variants={fadeUpVariant}
-                >
-                    Never Lose Your Stuff
-                    <br />
-                    Ever Again
-                </Title>
-
-                <Subtitle variants={fadeUpVariant}>
-                    For those "Where TF?!" moments. Find anything instantly with AI-powered voice,
-                    text, and image search.
-                </Subtitle>
-
-                <CTAContainer variants={fadeUpVariant}>
-                    <AppStoreButton
-                        href="#"
-                        variants={bounceScale}
-                        whileHover="hover"
-                        whileTap="tap"
-                    >
-                        <img
-                            src="/assets/images/brand-logos/ios_app_store.svg"
-                            alt="Download on App Store"
-                        />
-                    </AppStoreButton>
-                    <AppStoreButton
-                        href="#"
-                        variants={bounceScale}
-                        whileHover="hover"
-                        whileTap="tap"
-                    >
-                        <img
-                            src="/assets/images/brand-logos/android_app_store.svg"
-                            alt="Get it on Google Play"
-                        />
-                    </AppStoreButton>
-                </CTAContainer>
-
-                <PhoneContainer
-                    variants={fadeUpVariant}
-                >
-                    <PhoneImage
-                        src="/assets/images/home/phone.png"
-                        alt="WhereTF.ai App Interface"
-                        initial={{ y: 20 }}
-                        animate={{
-                            y: [20, -20, 20],
-                        }}
-                        transition={{
-                            duration: 6,
-                            repeat: Infinity,
-                            repeatType: "reverse",
-                            ease: "easeInOut",
-                        }}
-                    />
-                </PhoneContainer>
-            </HeroContent>
-        </HeroSection>
-    );
+        <PhoneContainer
+          variants={fadeUpVariant}
+        >
+          <PhoneImage
+            src="/assets/images/home/phone.png"
+            alt="WhereTF.ai App Interface"
+            initial={{ y: 20 }}
+            animate={{
+              y: [20, -20, 20],
+            }}
+            transition={{
+              duration: 6,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut",
+            }}
+          />
+        </PhoneContainer>
+      </HeroContent>
+    </HeroSection>
+  );
 };
 
 export default Hero; 

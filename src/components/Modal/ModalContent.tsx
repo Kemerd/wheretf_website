@@ -110,9 +110,23 @@ export const AboutUsContent: React.FC = () => (
 
         <h3>Our Technology</h3>
         <p>
-            We leverage state-of-the-art machine learning algorithms to predict item locations based on user
-            patterns and historical data. Our AI continuously learns and improves, making the service more
-            accurate and personalized over time.
+            We harness the power of advanced AI technologies to create a seamless item tracking experience. Our system
+            utilizes sophisticated vectorization techniques to convert both text descriptions and images into
+            high-dimensional vector embeddings, enabling lightning-fast semantic search capabilities.
+        </p>
+
+        <p>
+            For image processing, we employ state-of-the-art semantic image separation powered by OpenAI's CLIP and
+            Meta's Segment Anything Model (SAM). This allows us to precisely identify and isolate objects within
+            images, making visual search incredibly accurate. These visual features are then transformed into vector
+            embeddings stored in our pgvector database for efficient retrieval.
+        </p>
+
+        <p>
+            Our AI engine continuously learns from user interactions, leveraging historical data and behavioral
+            patterns to improve prediction accuracy over time. The combination of vector search, semantic
+            understanding, and machine learning enables us to not just find items, but predict where they might
+            be even when they haven't been explicitly logged.
         </p>
 
         <h3>Our Vision</h3>

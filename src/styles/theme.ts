@@ -5,16 +5,16 @@ const theme: DefaultTheme = {
     colors: {
         primary: '#000000',
         secondary: '#1A1A1A',
-        accent: '#007AFF', // Apple's blue
+        accent: '#FF3B0D', // Updated accent color
         text: {
             primary: '#FFFFFF',
             secondary: '#A1A1A6',
-            accent: '#007AFF',
+            accent: '#FF3B0D', // Updated accent color
         },
         background: {
             primary: '#000000',
             secondary: '#1A1A1A',
-            gradient: 'linear-gradient(180deg, rgba(0,122,255,0.15) 0%, rgba(0,0,0,0) 100%)',
+            gradient: 'linear-gradient(180deg, rgba(255,59,13,0.15) 0%, rgba(0,0,0,0) 100%)', // Updated gradient
         },
     },
     typography: {
