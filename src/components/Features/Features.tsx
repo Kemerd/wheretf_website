@@ -97,34 +97,34 @@ const FeatureDescription = styled(motion.p)`
 
 const features = [
     {
-        icon: '🔍',
-        title: 'AI-Powered Search',
-        description: 'Find anything instantly with voice commands, text searches, and image recognition.',
-    },
-    {
-        icon: '📸',
-        title: 'Visual Recognition',
-        description: 'Take a photo of an item, and let AI identify and store it for future searches.',
+        icon: '🎛️',
+        title: 'Complete DAW Integration',
+        description: 'Connects directly to your DAW through OSC communication, understanding every aspect of your production.',
     },
     {
         icon: '🧠',
-        title: 'Smart Predictions',
-        description: 'AI learns your storage habits and predicts where items might be.',
+        title: 'AI-Powered Mixing Suggestions',
+        description: 'Get context-aware mixing advice based on your specific project, plugins, and genre.',
     },
     {
-        icon: '📍',
-        title: 'Location Tracking',
-        description: 'Organize items in a hierarchical system: Rooms → Containers → Compartments.',
+        icon: '🔊',
+        title: 'Real-time Audio Analysis',
+        description: 'Advanced analysis of your tracks to understand spectral relationships and provide precise feedback.',
     },
     {
-        icon: '🔄',
-        title: 'Movement History',
-        description: 'Track item movements with timestamped history of storage locations.',
+        icon: '🎚️',
+        title: 'Parameter Adjustment Guidance',
+        description: 'Learn exactly which knobs to turn and by how much to achieve professional sound.',
     },
     {
-        icon: '🏢',
-        title: 'Home & Business',
-        description: 'Perfect for households, workshops, and business inventory management.',
+        icon: '🔌',
+        title: 'Plugin Intelligence',
+        description: 'MixMate recognizes all your VSTs and plugins—even custom ones—and understands how to use them effectively.',
+    },
+    {
+        icon: '📊',
+        title: 'Comprehensive Analysis',
+        description: 'Generates spectrograms, dB analysis, transient detection and dozens of audio metrics.',
     },
 ];
 
@@ -139,7 +139,7 @@ const Features: React.FC = () => {
                 animate={controls}
             >
                 <SectionTitle variants={fadeUpVariant}>
-                    Powerful Features That Make Life Easier
+                    Revolutionary AI Audio Intelligence
                 </SectionTitle>
 
                 <FeaturesGrid>

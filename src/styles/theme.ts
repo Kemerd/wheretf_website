@@ -1,25 +1,29 @@
 import { DefaultTheme } from 'styled-components';
 
-// Define our theme with a modern, sleek color palette and typography
+// Define our theme with colors from the Flutter app theme.dart file
+// We're using a sleek, modern, Apple-inspired design language with
+// glassmorphic elements throughout the UI for depth and visual hierarchy.
+// Our color scheme features dark backgrounds with vibrant lime green accents
+// for a futuristic, high-tech audio production feel.
 const theme: DefaultTheme = {
     colors: {
-        primary: '#000000',
-        secondary: '#1A1A1A',
-        accent: '#FF3B0D', // Updated accent color
+        primary: '#39FF14', // primaryColor - Neon green
+        secondary: '#1F1F21', // secondaryColor - Very dark gray
+        accent: '#9CFF00', // accentColor - Bright lime green
         text: {
-            primary: '#FFFFFF',
-            secondary: '#A1A1A6',
-            accent: '#FF3B0D', // Updated accent color
+            primary: '#D7FDE4', // textPrimary - Light mint green
+            secondary: '#7DA18A', // textSecondary - Muted mint green
+            accent: '#39FF14', // textAccent - Neon green for emphasis
         },
         background: {
-            primary: '#000000',
-            secondary: '#1A1A1A',
-            gradient: 'linear-gradient(180deg, rgba(255,59,13,0.15) 0%, rgba(0,0,0,0) 100%)', // Updated gradient
+            primary: '#020B12', // background - Very dark blue-black
+            secondary: '#0A1C24', // surface - Slightly lighter than background
+            gradient: 'linear-gradient(135deg, #010708 0%, #020B12 50%, #051820 100%)', // backgroundGradient
         },
     },
     typography: {
         fontFamily: {
-            primary: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+            primary: 'sfpro, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
             monospace: 'SF Mono, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
         },
         fontSize: {

@@ -133,30 +133,28 @@ const CTAButton = styled(motion.button) <{ isPopular?: boolean }>`
 
 const plans = [
     {
-        name: 'Pro Plan',
+        name: 'Indie Producer',
         price: '$9.99',
         period: '/month',
         features: [
-            'Unlimited AI-Powered Text Searches',
-            '10 Image-Based Lookups Per Month',
-            'Smart Location Predictions',
-            'Storage History Tracking',
-            'Faster AI Processing',
+            'Full DAW Integration',
+            'Real-time Mixing Suggestions',
+            '10-second Context Window',
+            'CPU Processing',
+            '500 MixMoves Per Month',
         ],
     },
     {
-        name: 'Premium AI Plan',
-        price: '$24.99',
+        name: 'Production Studio',
+        price: '$99.99',
         period: '/month',
         isPopular: true,
         features: [
-            'Everything in Pro, PLUS:',
-            '50 AI Image-Based Lookups Per Month',
-            'AI Behavioral Insights',
-            'Real-Time Image Matching',
-            'Advanced Search Accuracy',
-            'Exclusive Beta Features',
-            'Priority Support',
+            'Everything in Indie Producer, PLUS:',
+            'GPU Acceleration (10-30x Faster)',
+            '30-second Context Window',
+            'Priority Processing',
+            '5000 MixMoves Per Month',
         ],
     },
 ];
@@ -172,7 +170,7 @@ const Pricing: React.FC = () => {
                 animate={controls}
             >
                 <SectionTitle variants={fadeUpVariant}>
-                    Choose Your Plan
+                    Revolutionary Tech, Not Revolutionary Pricing
                 </SectionTitle>
 
                 <PricingGrid>
@@ -203,11 +201,13 @@ const Pricing: React.FC = () => {
                                     Most Popular
                                 </PopularBadge>
                             )}
+
                             <PlanName>{plan.name}</PlanName>
                             <PlanPrice>
                                 <span className="amount">{plan.price}</span>
                                 <span className="period">{plan.period}</span>
                             </PlanPrice>
+
                             <FeatureList>
                                 {plan.features.map((feature, featureIndex) => (
                                     <Feature
@@ -215,20 +215,21 @@ const Pricing: React.FC = () => {
                                         initial={{ opacity: 0, x: -20 }}
                                         animate={{ opacity: 1, x: 0 }}
                                         transition={{
-                                            delay: featureIndex * 0.1,
+                                            delay: 0.3 + featureIndex * 0.1,
                                         }}
                                     >
                                         {feature}
                                     </Feature>
                                 ))}
                             </FeatureList>
+
                             <CTAButton
+                                isPopular={plan.isPopular}
                                 variants={bounceScale}
                                 whileHover="hover"
                                 whileTap="tap"
-                                isPopular={plan.isPopular}
                             >
-                                Get Started
+                                {plan.isPopular ? 'Start Studio Plan' : 'Start Indie Plan'}
                             </CTAButton>
                         </PricingCard>
                     ))}

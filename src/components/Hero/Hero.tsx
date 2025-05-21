@@ -74,15 +74,28 @@ const CTAContainer = styled(motion.div)`
   }
 `;
 
-const AppStoreButton = styled(motion.a)`
-  height: 48px;
-  img {
-    height: 100%;
-    width: auto;
-  }
+const PrimaryButton = styled(motion.a)`
+  padding: ${({ theme }) => `${theme.spacing.md} ${theme.spacing.xl}`};
+  background: ${({ theme }) => theme.colors.accent};
+  color: ${({ theme }) => theme.colors.text.primary};
+  font-weight: ${({ theme }) => theme.typography.fontWeight.semibold};
+  border-radius: ${({ theme }) => theme.borderRadius.full};
+  text-decoration: none;
+  font-size: ${({ theme }) => theme.typography.fontSize.base};
 `;
 
-const PhoneContainer = styled(motion.div)`
+const SecondaryButton = styled(motion.a)`
+  padding: ${({ theme }) => `${theme.spacing.md} ${theme.spacing.xl}`};
+  background: transparent;
+  color: ${({ theme }) => theme.colors.accent};
+  font-weight: ${({ theme }) => theme.typography.fontWeight.semibold};
+  border: 2px solid ${({ theme }) => theme.colors.accent};
+  border-radius: ${({ theme }) => theme.borderRadius.full};
+  text-decoration: none;
+  font-size: ${({ theme }) => theme.typography.fontSize.base};
+`;
+
+const DAWInterfaceContainer = styled(motion.div)`
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
@@ -105,10 +118,11 @@ const PhoneContainer = styled(motion.div)`
   }
 `;
 
-const PhoneImage = styled(motion.img)`
+const DAWInterfaceImage = styled(motion.img)`
   width: 100%;
   height: auto;
   border-radius: ${({ theme }) => theme.borderRadius.xl};
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 `;
 
 const Hero: React.FC = () => {
@@ -134,47 +148,40 @@ const Hero: React.FC = () => {
         <Title
           variants={fadeUpVariant}
         >
-          Never Lose Your Stuff
+          Because Someone Had
           <br />
-          Ever Again
+          To Make It
         </Title>
 
         <Subtitle variants={fadeUpVariant}>
-          For those "Where TF?!" moments. Find anything instantly with AI-powered voice,
-          text, and image search.
+          Complete integration with your DAW, like having an expert AI producer looking over your shoulder
         </Subtitle>
 
         <CTAContainer variants={fadeUpVariant}>
-          <AppStoreButton
-            href="#"
+          <PrimaryButton
+            href="#pricing"
             variants={bounceScale}
             whileHover="hover"
             whileTap="tap"
           >
-            <img
-              src="/assets/images/brand-logos/ios_app_store.svg"
-              alt="Download on App Store"
-            />
-          </AppStoreButton>
-          <AppStoreButton
-            href="#"
+            Get Started
+          </PrimaryButton>
+          <SecondaryButton
+            href="#features"
             variants={bounceScale}
             whileHover="hover"
             whileTap="tap"
           >
-            <img
-              src="/assets/images/brand-logos/android_app_store.svg"
-              alt="Get it on Google Play"
-            />
-          </AppStoreButton>
+            Learn More
+          </SecondaryButton>
         </CTAContainer>
 
-        <PhoneContainer
+        <DAWInterfaceContainer
           variants={fadeUpVariant}
         >
-          <PhoneImage
-            src="/assets/images/IPhone_16_Pro_Max_Vector.svg"
-            alt="mixmate.ai App Interface"
+          <DAWInterfaceImage
+            src="/assets/images/daw_interface.png"
+            alt="MixMate AI DAW Integration"
             initial={{ y: 20 }}
             animate={{
               y: [20, -20, 20],
@@ -186,12 +193,10 @@ const Hero: React.FC = () => {
               ease: "easeInOut",
             }}
             style={{
-              maxWidth: '380px',
-              margin: '0 auto',
               filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.2))'
             }}
           />
-        </PhoneContainer>
+        </DAWInterfaceContainer>
       </HeroContent>
     </HeroSection>
   );

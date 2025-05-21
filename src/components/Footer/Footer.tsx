@@ -137,7 +137,7 @@ const Footer: React.FC = () => {
             <img src="/assets/logo/mixmate_logo_light.svg" alt="mixmate.ai Logo" />
           </Logo>
           <Description>
-            Never lose your stuff again. AI-powered item tracking for home and business.
+            The world's first intelligent production assistant that creates a direct neural bridge between your DAW and advanced AI.
           </Description>
           <SocialLinks>
             <SocialLink
@@ -179,15 +179,17 @@ const Footer: React.FC = () => {
             <li><Link as="a" href="#features">Features</Link></li>
             <li><Link as="a" href="#pricing">Pricing</Link></li>
             <li><Link as="a" href="#support">Support</Link></li>
-            <li><Link as="a" href="#">Download App</Link></li>
+            <li><Link as="a" href="#">Download</Link></li>
           </LinkList>
         </Column>
 
         <Column>
-          <Title>Company</Title>
+          <Title>Resources</Title>
           <LinkList>
-            <li><Link onClick={() => setActiveModal('about')}>About Us</Link></li>
-            <li><Link onClick={() => setActiveModal('pressKit')}>Press Kit</Link></li>
+            <li><Link as="a" href="#">Blog</Link></li>
+            <li><Link as="a" href="#">Tutorials</Link></li>
+            <li><Link as="a" href="#">Compatible DAWs</Link></li>
+            <li><Link as="a" href="#">Community</Link></li>
           </LinkList>
         </Column>
 
@@ -196,49 +198,30 @@ const Footer: React.FC = () => {
           <LinkList>
             <li><Link onClick={() => setActiveModal('terms')}>Terms of Service</Link></li>
             <li><Link onClick={() => setActiveModal('privacy')}>Privacy Policy</Link></li>
+            <li><Link onClick={() => setActiveModal('about')}>About Us</Link></li>
           </LinkList>
         </Column>
       </Container>
 
-      <BottomBar>
-        <Copyright>
-          © {new Date().getFullYear()} mixmate.ai. All rights reserved.
-        </Copyright>
+      <BottomBar variants={fadeUpVariant} animate={controls}>
+        <Copyright>&copy; {new Date().getFullYear()} mixmate.ai. All rights reserved.</Copyright>
       </BottomBar>
 
-      {/* Modals */}
-      <Modal
-        isOpen={activeModal === 'privacy'}
-        onClose={handleCloseModal}
-        title="Privacy Policy"
-      >
+      <Modal isOpen={activeModal === 'privacy'} onClose={handleCloseModal} title="Privacy Policy">
         <PrivacyPolicyContent />
       </Modal>
 
-      <Modal
-        isOpen={activeModal === 'terms'}
-        onClose={handleCloseModal}
-        title="Terms of Service"
-      >
+      <Modal isOpen={activeModal === 'terms'} onClose={handleCloseModal} title="Terms of Service">
         <TermsOfServiceContent />
       </Modal>
 
-      <Modal
-        isOpen={activeModal === 'about'}
-        onClose={handleCloseModal}
-        title="About Us"
-      >
+      <Modal isOpen={activeModal === 'about'} onClose={handleCloseModal} title="About Us">
         <AboutUsContent />
       </Modal>
 
-      <Modal
-        isOpen={activeModal === 'pressKit'}
-        onClose={handleCloseModal}
-        title="Press Kit"
-      >
+      <Modal isOpen={activeModal === 'pressKit'} onClose={handleCloseModal} title="Coming Soon">
         <ComingSoonContent>
-          <p>Our press kit is coming soon!</p>
-          <p>Check back later for media resources and brand assets.</p>
+          Our press kit will be available soon. Check back later!
         </ComingSoonContent>
       </Modal>
     </FooterSection>

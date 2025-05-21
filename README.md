@@ -1,32 +1,34 @@
 # **mixmate.ai**
 
 ## **Overview**
-mixmate.ai is an AI-powered personal and business inventory tracker that helps users quickly locate misplaced objects using voice, text, and image search. The app leverages natural language processing (NLP), vector search, and AI-based predictions to retrieve stored item locations efficiently.
+mixmate.ai is the world's first intelligent production assistant that creates a direct neural bridge between your DAW and advanced AI. Unlike other AI audio tools that simply process your finished mix, MixMate AI understands every component of your production from the inside out.
+
+We've built a revolutionary AI system that comprehends not just how your music sounds, but how it's constructed—from individual track names and plugin chains to volume levels and frequency distribution. MixMate doesn't just hear your music; it understands your intentions.
 
 ## **Features**
-- 🔍 **AI-powered search**: Use natural language or voice commands like "Where'd that frickin’ socket set go?" to find items instantly.
-- 📸 **Image-based tracking**: Snap a photo to classify and store objects.
-- 📍 **Location hierarchy**: Track storage in nested structures (rooms, shelves, drawers).
-- 🔄 **Behavioral tracking**: AI predicts likely locations based on past object movements.
-- 🔗 **Supabase Integration**: Secure, scalable backend with vector search support.
-- ⚡ **Edge Functions for Fast Lookups**: Runs AI-powered search on Supabase Edge Functions to minimize latency.
+- 🎛️ **Complete DAW Integration**: Integrates directly with your DAW through OSC communication
+- 🧠 **AI-Powered Mixing Suggestions**: Context-aware mixing advice based on your specific project
+- 🔊 **Real-time Audio Analysis**: Processes your tracks to understand spectral relationships and more
+- 🎚️ **Parameter Adjustment Guidance**: Learn exactly which knobs to turn and by how much
+- 🔌 **Plugin Intelligence**: Recognizes all your VSTs and understands how to use them effectively
+- 📊 **Comprehensive Audio Analysis**: Generates spectrograms, dB analysis, and more
 
 ## **Tech Stack**
 ### **Frontend:**
-- **Flutter (Dart)** – Cross-platform mobile UI
-- **Supabase Auth** – User authentication and access control
+- **React (TypeScript)** – Modern, responsive web interface
+- **Styled Components** – Component-based styling
+- **Framer Motion** – Smooth, professional animations
 
 ### **Backend & AI:**
-- **Supabase Edge Functions** – Executes AI-driven object search
-- **PostgreSQL + pgvector** – Stores structured & vector-based embeddings for search
-- **OpenAI GPT-4 & CLIP** – AI-powered natural language processing & image embeddings
-- **Supabase Storage** – Stores user-uploaded object images
+- **LibTorch-Powered Audio Intelligence** – Custom audio embedding models
+- **OSC Communication Layer** – Direct integration with Ableton Live
+- **Advanced LLM Integration** – Contextualized understanding of audio and DAW state
 
 ## **Installation & Setup**
 ### **Prerequisites:**
 - Node.js & npm installed
-- Supabase account & project set up
-- OpenAI API key (for embeddings & AI search)
+- Ableton Live (for full DAW integration)
+- Compatible audio plugins
 
 ### **1. Clone the Repository**
 ```sh
@@ -39,75 +41,57 @@ cd mixmate-ai
 npm install
 ```
 
-### **3. Set Up Environment Variables**
-Create a `.env` file and add your API keys:
-```
-SUPABASE_URL=your_supabase_project_url
-SUPABASE_ANON_KEY=your_supabase_anon_key
-OPENAI_API_KEY=your_openai_key
-```
-
-### **4. Deploy Supabase Edge Functions**
+### **3. Run the Application**
 ```sh
-supabase functions deploy find_object
-supabase functions deploy classify_image
+npm start
 ```
 
-### **5. Run the Application**
+### **4. Build for Production**
 ```sh
-flutter run
+npm run build
 ```
 
-## **API Endpoints**
-### **1. Search for an Object (Text-Based Search)**
-```http
-POST /functions/v1/find_object
-```
-#### **Request Body:**
-```json
-{
-  "query": "Where is my 3/8 socket set?"
-}
-```
-#### **Response:**
-```json
-{
-  "item": "Socket Set",
-  "location": "Red Toolbox - Bottom Drawer"
-}
-```
+## **Pricing Plans**
 
-### **2. Classify an Image (Image-Based Search)**
-```http
-POST /functions/v1/classify_image
-```
-#### **Request Body:**
-```json
-{
-  "image_url": "https://your-cdn.com/image.jpg"
-}
-```
-#### **Response:**
-```json
-{
-  "match": true,
-  "item_id": "1234",
-  "location": "Toolbox - Top Drawer"
-}
-```
+### **Indie Producer - $9.99/month**
+- Full DAW integration
+- Real-time mixing suggestions
+- 10-second context window
+- CPU processing
+- 500 MixMoves per month
 
-## **Future Enhancements**
-- 🔄 **Autofill & autocomplete for object searches**
-- 📡 **QR/NFC tag integration for instant item scanning**
-- 🗣 **Voice-based search with Whisper AI**
-- 🤖 **AI-driven location suggestions based on user behavior**
+### **Production Studio - $99.99/month**
+- Everything in Indie Producer, plus:
+- GPU acceleration (10-30x faster processing)
+- 30-second context window
+- Priority processing
+- 5000 MixMoves per month
 
-## **Contributing**
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature-name`).
-3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push to your branch (`git push origin feature-name`).
-5. Open a pull request.
+## **Roadmap**
+
+### **Available Now:**
+- Full Audio Embedding Generation
+- Automated Bouncing
+- Comprehensive Analysis
+- Real-time Mixing Advice
+- Parameter Adjustment Guidance
+- Complete Plugin Intelligence
+
+### **Coming Soon:**
+- Direct DAW Control
+- Automated Gain Staging
+- Track Creation
+- Plugin Management
+- Full Mix Overhauls
+
+## **For Producers Who've Tried Everything Else**
+You've used the automated mastering services. You've tried the AI mixing plugins. You've watched countless YouTube tutorials.
+
+And yet, something's still missing.
+
+That's because until now, AI couldn't understand what you were actually trying to accomplish. It could only guess based on the end result.
+
+MixMate AI changes that. By integrating directly with your DAW and understanding your production from the inside out, it offers suggestions and improvements that actually make sense for YOUR music, not some generic template.
 
 ## **License**
 All Rights Reserved.

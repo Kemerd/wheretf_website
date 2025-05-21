@@ -132,19 +132,19 @@ const FAQAnswer = styled(motion.div)`
 const faqs = [
     {
         question: "How does mixmate.ai work?",
-        answer: "mixmate.ai uses AI to help you track and find your items. Simply tell it where you're storing something using text, voice, or images, and it'll remember for you. When you need to find something, just ask and the AI will tell you exactly where it is.",
+        answer: "mixmate.ai creates a direct neural bridge between your DAW and advanced AI. It connects to your DAW through OSC communication, analyzes your tracks in real-time, and provides context-aware mixing suggestions based on your specific project, plugins, and genre.",
     },
     {
-        question: "What if I forget to log an item?",
-        answer: "No worries! mixmate.ai's smart AI can predict where items might be based on your past storage habits. It learns from your patterns and can make educated guesses about where you might have placed something.",
+        question: "Which DAWs are currently supported?",
+        answer: "Currently, mixmate.ai fully supports Ableton Live with direct integration. We're actively working on adding support for Logic Pro, FL Studio, Pro Tools, and other major DAWs. Join our waitlist to be notified when your DAW is supported.",
     },
     {
-        question: "Is my data secure?",
-        answer: "Absolutely! We use enterprise-grade encryption and security measures to protect your data. All information is stored securely using Supabase with Row-Level Security (RLS), ensuring only you have access to your item locations.",
+        question: "What are MixMoves and how do they work?",
+        answer: "MixMoves are the currency that powers mixmate.ai's analysis and suggestions. Each time MixMate analyzes your tracks, suggests a tweak, or helps improve your mix, it costs you MixMoves. The Indie Producer plan includes 500 MixMoves per month, while the Production Studio plan includes 5000.",
     },
     {
-        question: "Can I use it for business?",
-        answer: "Yes! mixmate.ai is perfect for both personal and business use. Many businesses use it for inventory management, tool tracking, and warehouse organization. Our Premium AI Plan is specifically designed to handle business needs.",
+        question: "Is my music data secure?",
+        answer: "Absolutely! We use enterprise-grade encryption to protect your music data. We never store your actual audio files without explicit permission. All processing is done locally on your machine, with only the analysis data being sent to our servers for AI processing.",
     },
 ];
 
@@ -165,7 +165,7 @@ const Support: React.FC = () => {
                 animate={controls}
             >
                 <SectionTitle variants={fadeUpVariant}>
-                    Need Help?
+                    Producer Support
                 </SectionTitle>
 
                 <Grid>
@@ -194,7 +194,7 @@ const Support: React.FC = () => {
                         <FormGroup>
                             <Label>Message</Label>
                             <TextArea
-                                placeholder="How can we help?"
+                                placeholder="Tell us about your production needs..."
                                 required
                                 whileFocus={{ scale: 1.01 }}
                             />
@@ -205,7 +205,7 @@ const Support: React.FC = () => {
                             whileHover="hover"
                             whileTap="tap"
                         >
-                            Send Message
+                            Connect With Us
                         </SubmitButton>
                     </ContactForm>
 
