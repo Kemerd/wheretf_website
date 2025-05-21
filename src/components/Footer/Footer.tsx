@@ -134,7 +134,7 @@ const Footer: React.FC = () => {
       >
         <Column>
           <Logo href="/" variants={bounceScale} whileHover="hover" whileTap="tap">
-            <img src="/assets/logo/wheretf_logo_light.svg" alt="WhereTF.ai Logo" />
+            <img src="/assets/logo/mixmate_logo_light.svg" alt="mixmate.ai Logo" />
           </Logo>
           <Description>
             Never lose your stuff again. AI-powered item tracking for home and business.
@@ -202,7 +202,7 @@ const Footer: React.FC = () => {
 
       <BottomBar>
         <Copyright>
-          © {new Date().getFullYear()} WhereTF.ai. All rights reserved.
+          © {new Date().getFullYear()} mixmate.ai. All rights reserved.
         </Copyright>
       </BottomBar>
 

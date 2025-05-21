@@ -17,7 +17,7 @@ describe('Header Component', () => {
         renderWithTheme(<Header />);
 
         // Check if logo is present
-        expect(screen.getByAltText('WhereTF.ai Logo')).toBeInTheDocument();
+        expect(screen.getByAltText('mixmate.ai Logo')).toBeInTheDocument();
 
         // Check if navigation links are present
         expect(screen.getByText('Features')).toBeInTheDocument();

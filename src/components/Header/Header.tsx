@@ -97,7 +97,7 @@ const Header: React.FC = () => {
       }}
     >
       <Logo href="/" variants={bounceScale} whileHover="hover" whileTap="tap">
-        <img src="/assets/logo/wheretf_logo_light.svg" alt="WhereTF.ai Logo" />
+        <img src="/assets/logo/mixmate_logo_light.svg" alt="mixmate.ai Logo" />
       </Logo>
 
       <Nav>

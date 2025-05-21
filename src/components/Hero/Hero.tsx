@@ -174,7 +174,7 @@ const Hero: React.FC = () => {
         >
           <PhoneImage
             src="/assets/images/IPhone_16_Pro_Max_Vector.svg"
-            alt="WhereTF.ai App Interface"
+            alt="mixmate.ai App Interface"
             initial={{ y: 20 }}
             animate={{
               y: [20, -20, 20],

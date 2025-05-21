@@ -1,7 +1,7 @@
-# **WhereTF.ai**
+# **mixmate.ai**
 
 ## **Overview**
-WhereTF.ai is an AI-powered personal and business inventory tracker that helps users quickly locate misplaced objects using voice, text, and image search. The app leverages natural language processing (NLP), vector search, and AI-based predictions to retrieve stored item locations efficiently.
+mixmate.ai is an AI-powered personal and business inventory tracker that helps users quickly locate misplaced objects using voice, text, and image search. The app leverages natural language processing (NLP), vector search, and AI-based predictions to retrieve stored item locations efficiently.
 
 ## **Features**
 - 🔍 **AI-powered search**: Use natural language or voice commands like "Where'd that frickin’ socket set go?" to find items instantly.
@@ -30,8 +30,8 @@ WhereTF.ai is an AI-powered personal and business inventory tracker that helps u
 
 ### **1. Clone the Repository**
 ```sh
-git clone https://github.com/yourrepo/wheretf-ai.git
-cd wheretf-ai
+git clone https://github.com/yourrepo/mixmate-ai.git
+cd mixmate-ai
 ```
 
 ### **2. Install Dependencies**
@@ -113,4 +113,4 @@ POST /functions/v1/classify_image
 All Rights Reserved.
 
 ## **Contact**
-For support or inquiries, email **support@wheretf.ai** or open an issue on GitHub.
+For support or inquiries, email **support@mixmate.ai** or open an issue on GitHub.

@@ -32,9 +32,9 @@ export const PrivacyPolicyContent: React.FC = () => (
 
         <h3>1. Introduction</h3>
         <p>
-            Welcome to WhereTF ("we," "our," or "us"). We are committed to protecting your privacy and ensuring
+            Welcome to mixmate ("we," "our," or "us"). We are committed to protecting your privacy and ensuring
             you understand how we collect, use, and safeguard your personal information. This Privacy Policy
-            explains our practices regarding data collection and usage through our mobile application WhereTF
+            explains our practices regarding data collection and usage through our mobile application mixmate
             (the "App").
         </p>
 
@@ -156,7 +156,7 @@ export const PrivacyPolicyContent: React.FC = () => (
 
         <h3>11. Contact Information</h3>
         <p>For privacy-related questions or concerns:</p>
-        <p>Email: privacy@wheretf.ai</p>
+        <p>Email: privacy@mixmate.ai</p>
 
         <h3>12. Specific Regional Rights</h3>
         <h3>12.1 European Users (GDPR)</h3>
@@ -205,13 +205,13 @@ export const TermsOfServiceContent: React.FC = () => (
 
         <h3>1. Acceptance of Terms</h3>
         <p>
-            By accessing or using WhereTF.ai, you agree to be bound by these Terms of Service and all applicable
+            By accessing or using mixmate.ai, you agree to be bound by these Terms of Service and all applicable
             laws and regulations. If you do not agree with any of these terms, you are prohibited from using this service.
         </p>
 
         <h3>2. Service Description</h3>
         <p>
-            WhereTF.ai is an AI-powered item tracking service that helps users locate and manage their belongings.
+            mixmate.ai is an AI-powered item tracking service that helps users locate and manage their belongings.
             The service is provided "as is" and may be updated or modified at any time.
         </p>
 
@@ -234,14 +234,14 @@ export const TermsOfServiceContent: React.FC = () => (
 export const AboutUsContent: React.FC = () => (
     <Content>
         <p>
-            WhereTF.ai is a revolutionary AI-powered item tracking platform developed by Novabox LLC. Our mission
+            mixmate.ai is a revolutionary AI-powered item tracking platform developed by Novabox LLC. Our mission
             is to eliminate the frustration of lost items by combining cutting-edge artificial intelligence with
             intuitive user experience.
         </p>
 
         <h3>Our Story</h3>
         <p>
-            Born from the universal experience of losing important items, WhereTF.ai was created to bring peace
+            Born from the universal experience of losing important items, mixmate.ai was created to bring peace
             of mind to people's daily lives. Our team of AI experts and UX designers has developed a solution
             that makes item tracking not just effective, but enjoyable.
         </p>

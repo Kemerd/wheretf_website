@@ -131,12 +131,12 @@ const FAQAnswer = styled(motion.div)`
 
 const faqs = [
     {
-        question: "How does WhereTF.ai work?",
-        answer: "WhereTF.ai uses AI to help you track and find your items. Simply tell it where you're storing something using text, voice, or images, and it'll remember for you. When you need to find something, just ask and the AI will tell you exactly where it is.",
+        question: "How does mixmate.ai work?",
+        answer: "mixmate.ai uses AI to help you track and find your items. Simply tell it where you're storing something using text, voice, or images, and it'll remember for you. When you need to find something, just ask and the AI will tell you exactly where it is.",
     },
     {
         question: "What if I forget to log an item?",
-        answer: "No worries! WhereTF.ai's smart AI can predict where items might be based on your past storage habits. It learns from your patterns and can make educated guesses about where you might have placed something.",
+        answer: "No worries! mixmate.ai's smart AI can predict where items might be based on your past storage habits. It learns from your patterns and can make educated guesses about where you might have placed something.",
     },
     {
         question: "Is my data secure?",
@@ -144,7 +144,7 @@ const faqs = [
     },
     {
         question: "Can I use it for business?",
-        answer: "Yes! WhereTF.ai is perfect for both personal and business use. Many businesses use it for inventory management, tool tracking, and warehouse organization. Our Premium AI Plan is specifically designed to handle business needs.",
+        answer: "Yes! mixmate.ai is perfect for both personal and business use. Many businesses use it for inventory management, tool tracking, and warehouse organization. Our Premium AI Plan is specifically designed to handle business needs.",
     },
 ];
 

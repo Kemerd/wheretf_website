@@ -1,8 +1,8 @@
-WhereTF.ai – Your AI-Powered Memory for Lost Items
+mixmate.ai – Your AI-Powered Memory for Lost Items
 Overview
-WhereTF.ai is an AI-powered personal and business inventory tracking app that helps users instantly locate misplaced items using voice commands, text searches, and image recognition. Whether you’re constantly misplacing your keys at home or managing tools and inventory in a shop, WhereTF.ai ensures you never waste time searching again.
+mixmate.ai is an AI-powered personal and business inventory tracking app that helps users instantly locate misplaced items using voice commands, text searches, and image recognition. Whether you’re constantly misplacing your keys at home or managing tools and inventory in a shop, mixmate.ai ensures you never waste time searching again.
 
-With a combination of natural language processing (NLP), vector search, AI-powered predictions, and image-based object recognition, WhereTF.ai acts as a personal memory assistant, keeping track of where you store your items and intelligently predicting where they might be.
+With a combination of natural language processing (NLP), vector search, AI-powered predictions, and image-based object recognition, mixmate.ai acts as a personal memory assistant, keeping track of where you store your items and intelligently predicting where they might be.
 
 Key Features
 🔍 AI-Powered Search (Text & Voice)
@@ -10,7 +10,7 @@ Simply type or ask: “Where’d my 3/8 socket set go?” and get an instant ans
 Uses OpenAI’s GPT-4o for natural language understanding.
 Supports voice commands, making it perfect for hands-free searching.
 📸 Image-Based Search & Object Recognition
-Take a photo of an item, and WhereTF.ai identifies and stores it for future searches.
+Take a photo of an item, and mixmate.ai identifies and stores it for future searches.
 Uses OpenAI’s CLIP & Semantic Segment Anything (SSA) for precise object detection.
 If you forget the name of an object, just upload a photo of something similar, and AI will match it.
 📍 Location Hierarchy & Structured Storage
@@ -21,7 +21,7 @@ Compartments → (Top Drawer, Bottom Right Section)
 AI remembers every placement, so even if you vaguely remember storing something in “the workshop,” it can suggest precise locations.
 🧠 Behavioral Tracking & Smart Predictions
 AI learns your storage habits over time and suggests likely locations based on your past behavior.
-Example: If you frequently store measuring tape in the toolbox, but one day you leave it on the workbench, WhereTF.ai predicts where you last had it.
+Example: If you frequently store measuring tape in the toolbox, but one day you leave it on the workbench, mixmate.ai predicts where you last had it.
 Uses historical location data to improve accuracy over time.
 🔄 Real-Time Object Movement Tracking
 Whenever you move an item, AI logs the movement in its database.
@@ -32,7 +32,7 @@ For Households: Track everyday items like keys, remote controls, phone chargers,
 For Businesses & Shops: Perfect for inventory tracking, tool management, and warehouse organization.
 For Workshop Owners & Mechanics: Never lose a specialty wrench or socket set again.
 🚀 Instant AI-Powered Object Recovery
-If you can’t find something, WhereTF.ai makes an educated guess about where it might be.
+If you can’t find something, mixmate.ai makes an educated guess about where it might be.
 Uses GPT-4o predictions, combined with past movement history, to suggest the most probable location.
 Example: “Your measuring tape was last seen in the garage, but you often leave it in the kitchen drawer—check there too.”
 📊 Detailed Storage Reports & Insights
@@ -40,7 +40,7 @@ Get reports on your most frequently misplaced items.
 AI provides insights into your storage patterns and helps optimize organization.
 How It Works
 1️⃣ Store Your Items
-Use text, voice, or images to log an item in WhereTF.ai.
+Use text, voice, or images to log an item in mixmate.ai.
 AI categorizes the item and assigns it a location (e.g., “Screwdriver → Red Toolbox → Second Drawer”).
 2️⃣ Search for an Item
 Use natural language search:
@@ -54,7 +54,7 @@ Example: “Your hammer isn’t logged, but you usually keep it in the garage.�
 4️⃣ Track Movement & History
 AI keeps historical records of where you last moved an item.
 If something was recently relocated, AI lets you know when and where it was last stored.
-Technology Behind WhereTF.ai
+Technology Behind mixmate.ai
 Component	Technology Used
 Frontend	Flutter (Dart)
 Backend	Supabase Edge Functions
@@ -80,29 +80,29 @@ Subscription Plans
 ✅ Advanced Search Accuracy – Finds even the most vaguely described items.
 ✅ Exclusive Beta Features & Priority Support – Early access to new tools.
 
-Who is WhereTF.ai For?
+Who is mixmate.ai For?
 Forgetful people – Stop losing everyday essentials.
 DIYers & Mechanics – Keep track of tools & hardware.
 Makers & Hobbyists – Organize craft supplies, electronics, and more.
 Business Owners & Shops – Use it for inventory & supply tracking.
 Warehouse Managers – Optimize product storage and retrieval.
-Why Choose WhereTF.ai?
+Why Choose mixmate.ai?
 ✅ AI-Powered Efficiency – Instantly find misplaced items.
 ✅ Voice, Text & Image Search – Multiple ways to locate your stuff.
 ✅ No More Wasted Time – Stop searching and just ask AI.
 ✅ Organized & Predictive – AI helps you optimize storage habits.
 ✅ Scales for Home & Business – Works for personal use, workshops, and even inventory tracking.
 
-💡 WhereTF.ai isn’t just a search tool—it’s your AI-powered memory.
+💡 mixmate.ai isn’t just a search tool—it’s your AI-powered memory.
 
 Get Started Today!
 🔹 Never lose your stuff again.
 🔹 Upgrade to AI-powered organization.
 🔹 Find what you need—when you need it.
 
-🚀 Download WhereTF.ai and make lost items a thing of the past!
+🚀 Download mixmate.ai and make lost items a thing of the past!
 
-📢 WhereTF.ai Landing Page – Full Breakdown
+📢 mixmate.ai Landing Page – Full Breakdown
 This landing page structure is optimized for converting visitors into paying users, keeping them engaged with punchy copy, visuals, and clear call-to-actions (CTAs). It also includes details so your AI can analyze and understand the product in depth.
 
 🔷 Section 1: Hero Banner (First Thing Users See)
@@ -113,12 +113,12 @@ This landing page structure is optimized for converting visitors into paying use
 
 📌 Why?
 
-First impression matters! Users should immediately understand what WhereTF.ai does and why it’s useful.
+First impression matters! Users should immediately understand what mixmate.ai does and why it’s useful.
 A GIF shows the AI in action—text alone isn't enough.
 CTA is actionable & direct.
 🔷 Section 2: How It Works (Simple 3-Step Process)
 Step 1: Store Your Items
-📌 Use voice, text, or images to tell WhereTF.ai where you place things.
+📌 Use voice, text, or images to tell mixmate.ai where you place things.
 ✅ Example: “My measuring tape is in the red toolbox, second drawer.”
 ✅ AI logs & categorizes storage locations automatically.
 
@@ -142,7 +142,7 @@ Keeps it 3 simple steps (no overloading with complexity).
 Clear CTA keeps them moving forward.
 🔷 Section 3: Key Features (With Visuals!)
 🔍 1. Find Anything Instantly with AI-Powered Search
-✅ Just ask WhereTF.ai and get an instant answer.
+✅ Just ask mixmate.ai and get an instant answer.
 ✅ Works with text, voice, and images.
 ✅ No more digging through drawers or searching for hours.
 
@@ -168,8 +168,8 @@ Clear CTA keeps them moving forward.
 
 🔹 CTA Below: "Stop Searching. Just Ask. →"
 
-🔷 Section 4: Why Choose WhereTF.ai? (Comparison Chart)
-Feature	WhereTF.ai	Traditional Inventory Apps	Your Memory 😆
+🔷 Section 4: Why Choose mixmate.ai? (Comparison Chart)
+Feature	mixmate.ai	Traditional Inventory Apps	Your Memory 😆
 AI-Powered Search	✅ Yes	❌ No	❌ No
 Text, Voice & Image Input	✅ Yes	❌ No	❌ No
 Smart Location Predictions	✅ Yes	❌ No	❌ No
@@ -183,7 +183,7 @@ Finds Items in Seconds	✅ Yes	❌ No	❌ No
 Users see a clear advantage over alternatives.
 Comparison reinforces the value proposition.
 🔷 Section 5: Pricing Plans
-💰 WhereTF.ai offers simple, transparent pricing:
+💰 mixmate.ai offers simple, transparent pricing:
 
 🆕 Pro Plan – $9.99/month or $99.99/year
 ✅ Unlimited AI Text Searches – Find anything instantly.
@@ -203,7 +203,7 @@ Comparison reinforces the value proposition.
 🔹 CTA Below: "Choose Your Plan →"
 
 🔷 Section 6: FAQs (Most Common Questions)
-✅ How does WhereTF.ai work?
+✅ How does mixmate.ai work?
 You log items using text, voice, or images, and AI stores & tracks them.
 
 ✅ What if I forget to log an item?
@@ -223,7 +223,7 @@ Currently, no. AI processing requires an internet connection.
 🔷 Section 7: Final CTA & Footer
 💡 Stop wasting time searching. Let AI find your stuff.
 🔹 Where’d that friggin’ go?! AI knows.
-🎯 Try WhereTF.ai today.
+🎯 Try mixmate.ai today.
 
 ✅ Download on App Store & Play Store
 ✅ Start a Free Trial (If Intro Offer Available)
